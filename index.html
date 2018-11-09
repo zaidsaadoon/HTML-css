@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro" rel="stylesheet">
+  <!--<link rel="stylesheet" href="assets/style.css">-->
+  <style>* { 
+        padding: 0;
+        margin: 0;
+      }
+      
+      #contianer {
+        width: 80%;
+        margin: auto;
+      }
+      
+      #content {
+        display: flex;
+      }
+      #content #recent_links {
+        flex-grow: 2;
+      }
+      
+      
+      #content #most_viewed {
+        flex-grow: 1;
+        flex-basis: 600px;
+        background-color: blue;
+      }
+      #content #most_viewed #banner{position: relative;
+      }
+      
+      #content #most_viewed #heading{
+        position: absolute;
+        bottom:160px;
+        text-align: left;
+        color: white;
+      }
+      #content #most_viewed #paragraph{
+        position: absolute;
+        bottom:30px;
+        text-align: left;
+        color: white;
+      }
+      #content #most_viewed time {
+        color:black;
+        font-family: 'Source Sans Pro', sans-serif;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        color: white;
+      }
+      
+      #content #recent_links article {
+        display: flex;
+      }
+      
+      article {
+        margin: 0px 0px 20px 0px;
+      }
+      
+      article div:nth-child(2) {
+        padding: 0px 0px 0px 10px;
+        position: relative;
+      }
+      article h3 {
+        font-family: 'Playfair Display', serif;
+        text-transform: capitalize;
+      }
+      
+      article p {
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+      
+      article time {
+        color:#399DF2;
+        font-family: 'Source Sans Pro', sans-serif;
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+      }</style>
+
+</head>
+<body>
+  <div id="contianer">
+    <header>
+      <img src="assets/logo.png" alt="fikraspace logo">
+    </header>
+    <section id="content">
+      <div id="recent_links">
+        <article>
+          <div>
+            <img src="https://unsplash.it/124/124" alt="">
+          </div>
+          <div>
+            <h3>How to pass a 10 weeks bootcamps</h3>
+            <p>, hic deleniti ex. Quod molestias est numquam quas!</p>
+            <time datetime="2018-07-07">July 7th 2018</time>
+          </div>
+        </article>
+        <article>
+            <div>
+              <img src="https://unsplash.it/124/124" alt="">
+            </div>
+            <div>
+              <h3>10 things to do after 10pm in Baghdad</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos excepturi modi, alias sunt quibusdam minus, ab odio earum magnam impedit necessitatibus praesentium, hic deleniti ex. Quod molestias est numquam quas!</p>
+              <time datetime="2018-07-07">July 7th 2018</time>
+            </div>
+          </article>
+          <article>
+              <div>
+                <img src="https://unsplash.it/124/124" alt="">
+              </div>
+              <div>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos excepturi modi, alias sunt quibusdam minus, ab odio earum magnam impedit necessitatibus praesentium, hic deleniti ex. Quod molestias est numquam quas!</p>
+                <time datetime="2018-07-07">July 7th 2018</time>
+              </div>
+            </article>
+            <article>
+                <div>
+                  <img src="https://unsplash.it/124/124" alt="">
+                </div>
+                <div>
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos excepturi modi, alias sunt quibusdam minus, ab odio earum magnam impedit necessitatibus praesentium, hic deleniti ex. Quod molestias est numquam quas!</p>
+                  <time datetime="2018-07-07">July 7th 2018</time>
+                </div>
+              </article>
+      </div>
+      <div id="most_viewed">
+        list of most viewed links
+            <article>
+                <div id="banner">
+                  <img src="https://unsplash.it/300/300" alt="">
+                
+                  <h3 id="heading">How To Pass A 10 Weeks Bootcamps</h3>
+                  <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos excepturi modi, alias sunt quibusdam minus, ab odio earum magnam impedit necessitatibus praesentium, hic deleniti ex. Quod molestias est numquam quas!</p>
+                  <time datetime="2018-07-07">July 7th 2018</time>
+                </div>
+              </article>
+
+              <article>
+                    <div id="banner">
+                      <img src="https://unsplash.it/300/300" alt="">
+                    
+                      <h3 id="heading">How To Pass</h3>
+                      <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos excepturi modi, alias sunt quibusdam minus, ab odio earum magnam impedit necessitatibus praesentium, hic deleniti ex. Quod molestias est numquam quas!</p>
+                      <time datetime="2018-07-07">July 7th 2018</time>
+                    </div>
+                  </article>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
